@@ -6,12 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Berkshire Swash' rel='stylesheet'>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript">
+ // function load_about() {
+  //   document.getElementById("mainContainer").innerHTML='<object type="text/html" data="index.html" ></object>';
+//}
+$(document).ready( function() {
+    $("#about").on("click", function() {
+        $("#mainContainer").load("about1.html");
+    });
+    $("#help").on("click", function() {
+        $("#target").load("../pages/theHelpPage.html");
+    });
+    $("#contact").on("click", function() {
+        $("#target").load("../pages/theContactPage.html");
+    });
+});
+</script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="stylesheet" type="text/css" href="w2e.css">
+   <link rel="stylesheet" type="text/css" href="image.css">
 </head>
 <body>
 
@@ -33,8 +50,8 @@
         
         <div class="collapse navbar-collapse" id="navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li class="active"><a href="index.html" data-page="index" >Home</a></li>
+            <li ><a href="#" id="about">About</a></li>
             <li><a href="#">Features</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">Tenders</a></li>
@@ -43,7 +60,7 @@
               <a class="btn btn-default btn-outline btn-circle collapsed"  data-toggle="collapse" href="#nav-collapse1" aria-expanded="false" aria-controls="nav-collapse1">More</a>
             </li>
           </ul>
-          <ul class="collapse nav navbar-nav navbar-right nav-collapse " id="nav-collapse1">
+          <ul class="collapse nav navbar navbar-nav navbar-right nav-collapse " id="nav-collapse1">
             <li><a href="#">Our Business</a></li>
             <li><a href="#">Our Presence</a></li>
             <li><a href="#">Quality and Safety Policy</a></li>
@@ -54,6 +71,39 @@
         </div>
       </div>
     </nav>
+
+
+<div  id="mainContainer">
+<div class=" container containers slideshow ">
+<img class="placeholder" src="https://www.indaver.com/fileadmin/_processed_/8/7/csm_Energy_from_Waste_888c86b18f.png">
+<div class="layer1">
+  <img class="img-fluid w-100" src="https://www.indaver.com/fileadmin/_processed_/8/7/csm_Energy_from_Waste_888c86b18f.png">
+</div>
+<div class="layer2">
+  <img class="img-fluid w-100" src="https://global-recycling.info/wp-content/uploads/2019/09/Chemical-Recycling-Plastic-1030x686.jpg">
+</div>
+<div class="layer3">
+  <img class="img-fluid w-100" src="https://bluenotes.anz.com/content/dam/bluenotes/images/articles/2018/August/KrpanCircularEconomy_IMG1.png/_jcr_content/renditions/cq5dam.web.1331.1024.png">
+</div>
+<div class="heading"><p>INTRODUCING W2E CHALLENGE</p></div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
       <footer>
         <ul class="social">
